@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --pri-color: #612701;
+    --sec-color:#2761f7;
+    --thr-color: #498998;
+    --white: #fff;
+    --black: #000;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    background-color: #276127;
+    font-family: 'Roboto Condensed' , sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    background-color: var(--thr-color);
+    width: 50%;
+    text-align: center;
+    padding: 8rem 2rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px var(--black);
+}
+
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--sec-color);
+    text-shadow: 4px 4px 6px var(--black);
+    margin-bottom: 5rem;
+}
+
+h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin: 3rem;
+}
+
+#textarea{
+    width: 90%;
+    height: 12rem;
+    border: 0;
+    padding: 1rem;
+    margin: 2rem 0;
+    font-size: 2rem;
+    font-family: inherit;
+    outline: 0;
+    border-radius: 4px;
+}
+
+#selectBtn {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--sec-color);
+    color: var(--white);
+    cursor: pointer;
+    margin: 1rem 0;
+    visibility: visible;
+}
+
+small{
+    color: var(--white);
+    line-height: 2rem;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    text-decoration: overline;
+    padding-top: 1px;
+    display: block;
+    margin-top: 10px;
+}
+
+.tag{
+    background-color: var(--sec-color);
+    color: var(--white);
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 15px var(--black);
+    display: inline-block;
+    margin: 1rem .5rem 2rem .5rem;
+    font-size: 1.5rem;
+}
+
+.tag.highlight{
+    background-color: var(--pri-color);
+    color: var(--white);
+}
